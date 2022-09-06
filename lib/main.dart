@@ -163,8 +163,49 @@ class _MyHomePageState extends State<MyHomePage> {
                           Text("up to 60% off, deal of the day and\n other great offers")
                         ],
                       )),
+                      SizedBox(height: 20,),
+
                       Container(
+                        width: double.infinity,
+                        height:220 ,
                         
+                        child: Column(
+                          children: [
+                            Text("ZOMATO"),
+                            Text("Festive\n  feast",style: TextStyle(fontSize: 60,color: Colors.red),),
+                            Text("17th AUG-16th SEP"),
+                            OutlinedButton(
+                              
+                              style: ButtonStyle(
+                              
+                              ),
+                              onPressed: (){}, child: Text("Tap to Explore all Exciting offers",style: TextStyle(color: Colors.red),))
+                          ],
+                        ),
+                      ),SizedBox(height: 10,),
+                      Container(
+                        padding: EdgeInsetsDirectional.all(10)  ,                     
+                         width: double.infinity,
+                        height: 200,
+                        decoration: const BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(10)),
+                          gradient: LinearGradient(
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft,
+              colors: [
+                Color.fromARGB(255, 226, 217, 107),
+                Color.fromARGB(255, 227, 62, 62),
+              ],
+            )
+                        ),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("PLACE YOUR FIRST ORDER &GET",style: TextStyle(color: Colors.white,fontSize: 12),),
+                            Text("Up to 60 % OFF +\nCashback",style: TextStyle(color: Colors.white,fontSize: 30),),
+                            Text("cashback up to ₹100 as Zomato Credits",style: TextStyle(color: Colors.white,fontSize: 12),)
+                          ],
+                        ),
                       )
                     
                     
